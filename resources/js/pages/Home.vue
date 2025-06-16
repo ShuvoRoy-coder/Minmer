@@ -28,7 +28,7 @@ const page = usePage();
             </div>
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
                 <ProductLink href="home" 
-                    frontImage="/images/products/pantalla1Hv.png"
+                    frontImage="/images/products/pantalla2Hv.png"
                     backImage="/images/products/pantalla2.png" 
                     frontText1="Qr Fiscal" frontText2="Físico"
                     backText1="Solicitar &#9654;" backText2="QR Fisico" />
