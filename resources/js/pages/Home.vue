@@ -20,19 +20,25 @@ const page = usePage();
             lg:grid-cols-3 
             lg:gap-8">
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" frontImage="/images/products/pantalla1.png"
-                    backImage="/images/products/pantalla1Hv.png" frontText1="Qr Fascal" frontText2="Electronico"
-                    backText1="Solicatar >" backText2="QR Electronico" />
+                <ProductLink href="home" 
+                    frontImage="/images/products/pantalla1Hv.png"
+                    backImage="/images/products/pantalla1.png" 
+                    frontText1="Qr Fiscal" frontText2="Electrónico"
+                    backText1="Solicitar &#9654;" backText2="QR Electrónico" />
             </div>
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" frontImage="/images/products/pantalla2.png"
-                    backImage="/images/products/pantalla1Hv.png" frontText1="Qr Fascal" frontText2="Electronico"
-                    backText1="Solicatar >" backText2="QR Electronico" />
+                <ProductLink href="home" 
+                    frontImage="/images/products/pantalla1Hv.png"
+                    backImage="/images/products/pantalla2.png" 
+                    frontText1="Qr Fiscal" frontText2="Físico"
+                    backText1="Solicitar &#9654;" backText2="QR Fisico" />
             </div>
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" frontImage="/images/products/pantalla3.png"
-                    backImage="/images/products/pantalla3Hv.png" frontText1="Qr Fascal" frontText2="Electronico"
-                    backText1="Solicatar >" backText2="QR Electronico" />
+                <ProductLink href="home" 
+                    frontImage="/images/products/pantalla3Hv.png"
+                    backImage="/images/products/pantalla3.png" 
+                    frontText1="Precinto" frontText2="Fiscal"
+                    backText1="Solicitar &#9654;" backText2="Precinto" />
             </div>
         </section>
 

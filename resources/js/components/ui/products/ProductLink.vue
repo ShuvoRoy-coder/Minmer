@@ -24,8 +24,10 @@ defineProps<{
             <img v-if="frontImage" :src="frontImage" alt="Front Image" class="w-full h-full object-cover" />
             <div v-if="frontText1 || frontText2"
                 class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-end gap-1 text-3xl text-black">
-                <span v-if="frontText1">{{ frontText1 }}</span>
-                <span v-if="frontText2">{{ frontText2 }}</span>
+                <div class="flex flex-col">
+                    <span v-if="frontText1">{{ frontText1 }}</span>
+                    <span v-if="frontText2">{{ frontText2 }}</span>
+                </div>
             </div>
         </div>
 
@@ -34,8 +36,10 @@ defineProps<{
             <img v-if="backImage" :src="backImage" alt="Back Image" class="w-full h-full object-cover" />
             <div v-if="backText1 || backText2"
                 class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-end gap-1 text-3xl text-black">
-                <span v-if="backText1">{{ backText1 }}</span>
-                <span v-if="backText2">{{ backText2 }}</span>
+                <div class="flex flex-col">
+                    <span v-if="backText1">{{ backText1 }}</span>
+                    <span v-if="backText2">{{ backText2 }}</span>
+                </div>
             </div>
         </div>
 
