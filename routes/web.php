@@ -31,8 +31,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+
+    Route::get('/products/{id}', function ($id) {
+        return Inertia::render('Product/Show', ['id' => $id]);
+    })->name('products.show');
 });
 
 // Load additional route files
-require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+require __DIR__ . '/settings.php';
+require __DIR__ . '/auth.php';

@@ -20,21 +20,24 @@ const page = usePage();
             lg:grid-cols-3 
             lg:gap-8">
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" 
+                <ProductLink 
+                    :href="route('products.show', 1)" 
                     frontImage="/images/products/pantalla1Hv.png"
                     backImage="/images/products/pantalla1.png" 
                     frontText1="Qr Fiscal" frontText2="Electrónico"
                     backText1="Solicitar &#9654;" backText2="QR Electrónico" />
             </div>
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" 
+                <ProductLink 
+                    :href="route('products.show', 2)" 
                     frontImage="/images/products/pantalla2Hv.png"
                     backImage="/images/products/pantalla2.png" 
                     frontText1="Qr Fiscal" frontText2="Físico"
                     backText1="Solicitar &#9654;" backText2="QR Fisico" />
             </div>
             <div class="w-full h-[calc(100dvh-86px)] overflow-hidden">
-                <ProductLink href="home" 
+                <ProductLink 
+                    :href="route('products.show', 3)" 
                     frontImage="/images/products/pantalla3Hv.png"
                     backImage="/images/products/pantalla3.png" 
                     frontText1="Precinto" frontText2="Fiscal"
