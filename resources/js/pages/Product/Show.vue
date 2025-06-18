@@ -46,29 +46,29 @@ const steps = [
             <!-- Steps List -->
             <div class="w-full relative z-30">
                 <div
-                    class="relative z-30 grid grid-cols-1 max-w-[700px] w-full min-[450px]:grid-cols-2 gap-4 pb-5 md:pb-16">
-                    <section v-for="(step, index) in steps" :key="index" class="relative min-h-[130px] max-w-[300px] 
+                    class="relative z-30 max-w-[700px] w-full grid grid-cols-2 gap-2 sm:gap-4 pb-5 lg:pb-16">
+                    <div v-for="(step, index) in steps" :key="index" class="relative min-h-[80px] sm:min-h-[130px] max-w-[180px] sm:max-w-[300px] 
                          overflow-hidden flex items-center justify-center">
 
-                        <div class="max-w-[260px] text-center p-2 sm:p-4 relative z-10 w-full
-                             text-white font-semibold text-lg sm:text-2xl">
+                        <div class="w-[85%] text-center p-2 sm:p-4 relative z-10
+                             text-white font-semibold text-sm sm:text-xl md:text-2xl">
                             {{ step }}
                         </div>
 
                         <img src="/images/products/product-step-bg.png" alt="img"
                             class="absolute top-0 left-0 w-full h-full">
 
-                    </section>
+                    </div>
                 </div>
             </div>
 
             <!-- Image -->
             <div
-                class="flex items-center justify-center absolute bottom-0 right-5 md:right-10 xl:items-end xl:justify-end">
-                <img :src="product.image" alt="Product Image" class="max-w-[430px] w-full" />
+                class="flex items-center justify-center static lg:absolute bottom-0 right-5 md:right-10 xl:items-end xl:justify-end">
+                <img :src="product.image" alt="Product Image" class="max-w-[200px] sm:max-w-[300px] xl:max-w-[400px] w-full" />
             </div>
 
-            <footer class="text-center w-full px-5 md:px-10 py-5 text-base sm:text-lg drop-shadow-xl text-black">
+            <footer class="text-center w-full px-5 md:px-10 py-5 text-sm sm:text-base md:text-lg drop-shadow-xl text-black">
                 Aviso de privacidad | Todos los derechos reservados
             </footer>
 
