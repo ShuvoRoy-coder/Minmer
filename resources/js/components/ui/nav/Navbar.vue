@@ -20,7 +20,7 @@ const toggleMenu = () => {
                 <Link :href="route('home')" class="max-w-[160px] w-full inline-block">
                 <img src="/logos/white-logo.png" alt="logo" class="w-full" />
                 </Link>
-                <Link :href="route('home')" class="inline-block uppercase whitespace-nowrap">
+                <Link :href="route('home')" class="inline-block whitespace-nowrap">
                     PORTAL DE GESTIÓN
                 </Link>
             </div>
